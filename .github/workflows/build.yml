@@ -21,7 +21,7 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --windowed --add-data "base_lgb.pkl;." your_script.py
+        pyinstaller --onefile --windowed --add-data "base_lgb.pkl;." gui.py
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
